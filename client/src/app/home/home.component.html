@@ -1,0 +1,153 @@
+<section id="home">
+  <div id="homeCarousel" class="carousel carousel-fade slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#homeCarousel" data-slide-to="1"></li>
+      <li data-target="#homeCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="assets/Slider/maldives.jpeg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="headline">Paris city Tour</div>
+          <div class="more-info">3 Days, 4 Nights Start From $450</div>
+          <button class="btn btn-outline-warning">Book Now</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/Slider/Fushimi_Inari_Taisha.jpeg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="headline">Paris city Tour</div>
+          <div class="more-info">3 Days, 4 Nights Start From $450</div>
+          <button class="btn btn-outline-warning">Book Now</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/Slider/great_wall.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="headline">Paris city Tour</div>
+          <div class="more-info">3 Days, 4 Nights Start From $450</div>
+          <button class="btn btn-outline-warning">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mx-0">
+    <div class="booking-box">
+      <!-- <form [formGroup]="formSearch" (submit)="onSearchSubmit()">
+        <div class="form-row align-items-end mx-0">
+          <div class="col-lg-1 col-md-2 pl-0">
+            <div>
+              Cari
+            </div>
+          </div>
+          <div class="col">
+            <label for="inputEmail4">When</label>
+            <input type="text" class="form-control" placeholder="City">
+          </div>
+          <div class="col">
+            <label for="inputEmail4">Where</label>
+            <input type="text" class="form-control" placeholder="State">
+          </div>
+          <div class="col">
+            <label for="inputEmail4">How Long</label>
+            <input type="text" class="form-control" placeholder="Zip">
+          </div>
+          <div class="col">
+            <label for="inputEmail4">With</label>
+            <input type="text" class="form-control" placeholder="City">
+          </div>
+          <div class="col-auto pr-0">
+            <button class="btn btn-primary btn-block" type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </form> -->
+    </div>
+  </div>
+</section>
+<section id="popular-place">
+  <div class="container">
+    <div class="title-div">
+      <div class="title">
+        Top Destinations
+        <br> in the World
+      </div>
+      <div class="tagline">
+        Explore a different way to travel
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-12 mb-4">
+        <div class="tour-wrapper">
+          <img src="assets/Slider/maldives.jpeg" alt="" class="img-fluid">
+          <div class="content">
+            <p class="duration">3 Days, 4 NIghts Start From $450</p>
+            <div class="h3 title">
+              Paris city Tour
+            </div>
+            <a href="http://" class="btn btn-warning">Book</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 mb-4">
+        <img src="assets/Slider/maldives.jpeg" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-4 col-sm-12 mb-4">
+        <img src="assets/Slider/maldives.jpeg" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-4 col-sm-12 mb-4">
+        <img src="assets/Slider/maldives.jpeg" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-4 col-sm-12 mb-4">
+        <img src="assets/Slider/maldives.jpeg" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-4 col-sm-12 mb-4">
+        <img src="assets/Slider/maldives.jpeg" alt="" class="img-fluid">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let tour of tourPosts">
+        <a routerLink="/detail/{{tour._id}}">
+          {{tour.title}}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container my-5">
+  <img src="assets/sample_banner.jpg" alt="" class="img-fluid w-100">
+</div>
+<section id="happy-costumer">
+  <div class="container">
+    <div class="title-div">
+      <div class="title">
+        Share the
+        <br>Happiness
+      </div>
+      <div class="tagline">
+        What our customers say
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/Slider/maldives.jpeg" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/Slider/maldives.jpeg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <img src="assets/Slider/maldives.jpeg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <img src="assets/Slider/maldives.jpeg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <img src="assets/Slider/maldives.jpeg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
