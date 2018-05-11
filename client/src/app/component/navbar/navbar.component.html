@@ -16,11 +16,8 @@
       <li class="nav-item">
         <a class="nav-link" *ngIf="authService.loggedIn()" routerLink="/profile">Profile</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" *ngIf="authService.loggedIn()" routerLink="/dashboard">Dashboard</a>
-      </li>
       <li class="nav item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-        <a class="nav-link" routerLink="/tour">Tour</a>
+        <a class="nav-link" routerLink="/tour">Dashboard</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" *ngIf="authService.loggedIn()" routerLink="/logout" (click)="onLogoutClick()">Logout</a>

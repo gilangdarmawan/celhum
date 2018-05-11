@@ -37,4 +37,24 @@ export class TourService {
     return this.http.get(this.domain + 'tours/allTours', this.options).map(res => res.json());
   }
 
+  // Function to get the tour using the id
+  getSingleTour(id) {
+    this.createAuthenticationHeaders(); // Create headers
+    return this.http.get(this.domain + 'tours/singleTour/' + id, this.options).map(res => res.json());
+  }
+
+  // Function to edit/update tour post
+  editTour(tour) {
+    this.createAuthenticationHeaders(); // Create headers
+    return this.http.put(this.domain + 'tours/updateTour/', tour, this.options).map(res => res.json());
+  }
+
+  // Function to delete a tour
+  deleteTour(id) {
+    this.createAuthenticationHeaders(); // Create headers
+    return this.http.delete(this.domain + 'tours/deleteTour/' + id, this.options).map(res => res.json());
+  }
+
 }
+
+
